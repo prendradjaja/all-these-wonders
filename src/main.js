@@ -6,22 +6,22 @@ function main() {
   const { section, chapter } = item;
 
   const app = document.querySelector('#app');
-  const contentWrapper = document.querySelector('#content-wrapper');
+  const result = document.querySelector('#result');
 
-  if (contentWrapper) {
-    contentWrapper.outerHTML = renderContent(chapter, section);
+  if (result) {
+    result.outerHTML = renderResult(chapter, section);
   } else {
     app.innerHTML = `
-      ${renderContent(chapter, section)}
+      ${renderResult(chapter, section)}
       <button id="reroll">Reroll</button>
     `;
     document.querySelector('#reroll').addEventListener('click', main);
   }
 }
 
-function renderContent(chapter, section) {
+function renderResult(chapter, section) {
   return `
-    <div id="content-wrapper">
+    <div id="result">
       <h1>${chapter}</h1>
       <h2>${section}</h2>
     </div>
