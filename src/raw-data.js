@@ -47,6 +47,8 @@ To face the fear
 - An impossible choice
 - Then you will know!
 - The price of freedom
+
+By every claim of love
 - Summer camp
 - The weight of a ring
 - Light and hope
